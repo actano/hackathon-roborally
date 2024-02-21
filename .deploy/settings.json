@@ -1,6 +1,6 @@
 {
   "public": {
     "mixpanelEnabled": true,
-    "kadiraEnabled": true
+    "kadiraEnabled": false
   }
 }
