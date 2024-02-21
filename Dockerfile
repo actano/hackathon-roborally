@@ -5,8 +5,9 @@ RUN apt-get clean
 
 FROM build as prod
 
-RUN useradd meteor
-USER meteor
+RUN useradd --user-group --system --create-home --no-log-init app
+USER app
+WORKDIR /app
 COPY . /app
 #RUN NODE_TLS_REJECT_UNAUTHORIZED=0 meteor run --allow-superuser
 
